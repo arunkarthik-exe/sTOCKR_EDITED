@@ -97,6 +97,13 @@ header {
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.feature-card {
+  transition: transform 0.3s ease;
+}
+.feature-card:hover {
+  transform: scale(1.1);
+}
+
 
 .feature-icon img {
   width: 80px;
@@ -129,11 +136,11 @@ header {
 .price-card-container {
   display: flex;
   justify-content: center;
-  align-items: stretch; /* Align the cards vertically */
+  align-items: stretch; 
 }
 
 .price-card {
-  flex: 1;
+  flex: 0 0 300px;
   margin: 0 20px;
   padding: 20px;
   background-color: #fff;
@@ -142,6 +149,13 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.price-card {
+  transition: transform 0.3s ease;
+}
+
+.price-card:hover {
+  transform: scale(1.1);
 }
 
 .price-card h3 {
@@ -168,8 +182,6 @@ header {
   justify-content: center;
 }
 
-/* Contact section styles */
-/* Contact section styles */
 .contact {
   padding: 50px 0;
   text-align: center;
@@ -198,7 +210,7 @@ header {
 .contact input[type="text"],
 .contact input[type="email"],
 .contact textarea {
-  width: calc(100% - 20px); /* Reduce left and right size by 10px each */
+  width: calc(100% - 20px); 
 }
 
 .contact button.btn {
@@ -206,7 +218,7 @@ header {
 }
 
 
-/* Footer styles */
+
 footer {
   background-color: #333;
   color: #fff;
@@ -226,17 +238,25 @@ footer {
   margin-right: 10px;
 }
 
-.alignn{
-  
-  /* width: 50%; */
-  /* align-items: center; */
-  padding-left: 500px;
-  padding-right: 500px;
-  /* justify-content: center; */
+.contact form {
+  display: flex;
+  flex-direction: column; /* Display the form elements in a column */
+  align-items: center; /* Align items horizontally at the center */
+  margin-bottom: 30px;
+}
 
- 
-} 
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  max-width: 400px; /* Set a maximum width for the input fields */
+}
 
+.contact button.btn {
+  margin-top: 10px;
+  align-self: center; /* Align the button to the center horizontally */
+}
 /* .alig{
   size: 30px;
 } */
